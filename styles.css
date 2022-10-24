@@ -1,0 +1,455 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-margin-top: 260px;
+}
+
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: larger;
+  font-weight: 500;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(127, 247, 111);
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(192, 243, 243);
+  border: 1px solid blueviolet;
+  border-radius: 20px;
+}
+
+h1 {
+  margin: 30px;
+  text-align: center;
+  color: blue;
+  letter-spacing: 5px;
+}
+
+/* navbar section */
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-bottom: -15px;
+}
+
+nav ul li {
+  list-style: none;
+  font-weight: bold;
+  font-style: normal;
+  border: 1px solid blue;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  letter-spacing: 3px;
+}
+
+nav ul li:hover {
+  background-color: gold;
+}
+
+nav ul li:active {
+  background-color: rgb(172, 248, 162);
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: blueviolet;
+}
+
+/* main section */
+main {
+  margin: 300px 35px auto 20px;
+}
+
+iframe {
+  border-radius: 20px;
+}
+
+.section {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: blue;
+  font-size: larger;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+p {
+  margin-top: 15px;
+  line-height: 30px;
+  background-color: rgb(234, 251, 80);
+  letter-spacing: 2px;
+  text-align: justify;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid blueviolet;
+}
+
+img {
+  border-radius: 20px;
+}
+
+.albums {
+  background-color: rgb(234, 251, 80);
+  border-radius: 5px;
+  border: 1px solid blueviolet;
+  margin-top: 15px;
+}
+
+.albums-1 {
+  border: none;
+}
+
+.albums li {
+  margin-top: 15px;
+  margin-left: 30px;
+  list-style-type: square;
+  letter-spacing: 3px;
+}
+
+.section-5-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 100%;
+  max-height: 100%;
+  gap: 30px;
+  background-color: rgb(40, 243, 13);
+  padding: 2rem;
+}
+
+.five {
+  margin-top: 100px;
+}
+
+/* buttons section */
+button {
+  background-color: rgb(183, 234, 241);
+  font-size: medium;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button:hover {
+  color: white;
+  background-color: black;
+}
+
+button a {
+  text-decoration: none;
+}
+
+.wiki {
+  margin-top: 50px;
+  letter-spacing: 2px;
+}
+
+.wiki-1:hover {
+  color: white;
+}
+
+/* form section */
+form {
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  border: 3px solid blue;
+}
+
+form > * {
+  margin-top: 10px;
+}
+
+form input,
+select {
+  height: 32px;
+  border-radius: 5px;
+}
+
+form select {
+  background-color: rgb(183, 234, 241);
+}
+
+form select:hover {
+  color: white;
+  background-color: black;
+}
+
+input:focus {
+  background-color: rgb(192, 243, 243);
+}
+
+form textarea {
+  height: 100px;
+  border-radius: 5px;
+}
+
+form textarea:focus {
+  background-color: rgb(127, 247, 111);
+}
+
+form button {
+  height: 30px;
+}
+
+/* author section */
+.author {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid blue;
+}
+
+.author-1 {
+  background-image: url(./logos/prince-amanie.jpg);
+  background-size: cover;
+  background-repeat: no repeat;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+span {
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+.profile,
+.profile-2 {
+  letter-spacing: 2px;
+}
+
+/* footer section */
+footer {
+  background-color: rgb(192, 243, 243);
+  padding-left: 30px;
+  border: 1px solid blueviolet;
+  border-radius: 20px;
+  margin: 50px 2px auto 2px;
+}
+
+footer .last-button {
+  transform: translateY(-0.5rem);
+  background-color: aliceblue;
+}
+
+footer .last-button:hover {
+  background-color: gold;
+}
+
+footer .last-button:active {
+  background-color: rgb(172, 248, 162);
+}
+
+footer .last-button a:hover {
+  color: blueviolet;
+}
+
+/* media queries breakpoint section for mobiles*/
+@media screen and (max-width: 768px) {
+  * {
+    scroll-margin-top: 250px;
+  }
+
+  main {
+    margin-top: 300px;
+  }
+
+  .card {
+    display: block;
+  }
+
+  img,
+  iframe {
+    max-width: 100%;
+  }
+
+  .author-1 {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+  }
+}
+
+/* media queries breakpoint section for tablets*/
+@media screen and (min-width: 769px) {
+  * {
+    scroll-margin-top: 245px;
+  }
+
+  main {
+    margin-top: 250px;
+  }
+
+  .iframe-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-container {
+    max-height: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .discover {
+    height: 50%;
+    overflow-y: scroll;
+  }
+
+  .section {
+    text-align: center;
+  }
+
+  .images-1-container,
+  .images-2-container,
+  .images-3-container,
+  .images-4-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .logo-1 {
+    width: 438px;
+    height: 300px;
+  }
+
+  .logo-2 {
+    width: 438px;
+    height: 300px;
+  }
+  .logo-3 {
+    width: 438px;
+    height: 300px;
+  }
+
+  .logo-4 {
+    width: 438px;
+    height: 300px;
+  }
+
+  .wiki {
+    margin-top: -100px;
+  }
+
+  form textarea {
+    height: 200px;
+  }
+
+  .author-1 {
+    height: 310px;
+    width: 310px;
+    border-radius: 170px;
+  }
+}
+
+/* media queries breakpoint section for laptops/desktops*/
+@media screen and (min-width: 994px) {
+  * {
+    scroll-margin-top: 200px;
+  }
+
+  main {
+    margin-top: 300px;
+  }
+
+  .iframe-1 {
+    height: 800px;
+  }
+
+  iframe {
+    width: 60%;
+    height: 800px;
+  }
+
+  .main-container {
+    max-height: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .images-1-container,
+  .images-2-container,
+  .images-3-container,
+  .images-4-container {
+    height: 80%;
+    width: 100%;
+  }
+
+  .logo-1 {
+    width: 100%;
+    height: 60%;
+  }
+
+  .logo-2 {
+    width: 100%;
+    height: 60%;
+  }
+
+  .logo-3 {
+    width: 100%;
+    height: 60%;
+  }
+
+  .logo-4 {
+    width: 100%;
+    height: 60%;
+  }
+
+  .wiki {
+    margin-top: 40px;
+  }
+
+  form textarea {
+    height: 250px;
+  }
+
+  .author-1 {
+    height: 400px;
+    width: 400px;
+    border-radius: 200px;
+  }
+}
+
+/* media queries breakpoint section for large laptops/desktops*/
+@media screen and (min-width: 995) and (max-width: 1200px) {
+  .discover {
+    height: 80%;
+    overflow-y: hidden;
+  }
+
+  .author-1 {
+    height: 500px;
+    width: 500px;
+    border-radius: 250px;
+  }
+}

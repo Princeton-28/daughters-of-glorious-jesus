@@ -108,6 +108,10 @@ img {
   border-radius: 20px;
 }
 
+img:hover {
+  box-shadow: 5px 10px blue;
+}
+
 .albums {
   background-color: rgb(234, 251, 80);
   border-radius: 5px;

@@ -436,22 +436,16 @@ footer .last-button a:hover {
   }
 
   .author-1 {
-    height: 400px;
-    width: 400px;
-    border-radius: 200px;
+    height: 370px;
+    width: 370px;
+    border-radius: 185px;
   }
 }
 
 /* media queries breakpoint section for large laptops/desktops*/
-@media screen and (min-width: 995) and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .discover {
-    height: 80%;
-    overflow-y: hidden;
-  }
-
-  .author-1 {
-    height: 500px;
-    width: 500px;
-    border-radius: 250px;
+    height: 50%;
+    overflow-y: scroll;
   }
 }

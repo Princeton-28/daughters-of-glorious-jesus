@@ -349,7 +349,7 @@ footer .last-button a:hover {
 /* media queries breakpoint section for mobiles*/
 @media only screen and (min-width: 500px) and (max-width: 768px) {
   * {
-    scroll-margin-top: 250px;
+    scroll-margin-top: 100px;
   }
 
   h1 {
@@ -357,7 +357,7 @@ footer .last-button a:hover {
   }
 
   main {
-    margin-top: 150px;
+    margin-top: 100px;
   }
 
   .card {
@@ -395,7 +395,7 @@ footer .last-button a:hover {
   }
 
   main {
-    margin-top: 250px;
+    margin-top: 195px;
   }
 
   .iframe-1 {
@@ -411,11 +411,6 @@ footer .last-button a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-  }
-
-  .discover {
-    height: 30%;
-    overflow-y: scroll;
   }
 
   .section {
@@ -451,12 +446,11 @@ footer .last-button a:hover {
   }
 
   .albums {
-    height: 28.5%;
-    overflow-y: scroll;
+    height: 37%;
   }
 
   .wiki {
-    margin-top: -100px;
+    margin-top: 60px;
   }
 
   form textarea {
@@ -473,20 +467,16 @@ footer .last-button a:hover {
 /* media queries breakpoint section for laptops/desktops*/
 @media only screen and (min-width: 994px) {
   * {
-    scroll-margin-top: 200px;
+    scroll-margin-top: 150px;
   }
 
   main {
-    margin-top: 300px;
-  }
-
-  .iframe-1 {
-    height: 800px;
+    margin-top: 170px;
   }
 
   iframe {
-    width: 60%;
-    height: 800px;
+    min-width: 80%;
+    min-height: 600px;
   }
 
   .main-container {
@@ -495,6 +485,10 @@ footer .last-button a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+  }
+
+  .discover {
+    height: 60%;
   }
 
   .images-1-container,
@@ -525,8 +519,12 @@ footer .last-button a:hover {
     min-height: 60%;
   }
 
+  .albums {
+    height: 46.3%;
+  }
+
   .wiki {
-    margin-top: 40px;
+    margin-top: 90px;
   }
 
   form textarea {
@@ -542,8 +540,20 @@ footer .last-button a:hover {
 
 /* media queries breakpoint section for large laptops/desktops*/
 @media only screen and (min-width: 1200px) {
-  .discover {
-    height: 50%;
-    overflow-y: scroll;
+  * {
+    scroll-margin-top: 170px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  iframe {
+    min-width: 90%;
+    min-height: 800px;
+  }
+
+  .albums {
+    height: 50.2%;
   }
 }

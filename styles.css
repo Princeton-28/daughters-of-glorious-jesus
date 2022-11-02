@@ -46,7 +46,6 @@ nav {
   left: 5px;
   top: -80px;
   font-size: 25px;
-  /* color: blue; */
   cursor: pointer;
 }
 
@@ -93,7 +92,7 @@ nav ul li a:hover {
   color: blueviolet;
 }
 
-/* Aside-bar */
+/* aside-bar section */
 .left-bar {
   position: fixed;
   width: 100%;

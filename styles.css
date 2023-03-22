@@ -263,10 +263,12 @@ form input,
 select {
   height: 32px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 form select {
   background-color: rgb(183, 234, 241);
+  cursor: pointer;
 }
 
 form select:hover {
@@ -281,6 +283,7 @@ input:focus {
 form textarea {
   height: 100px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 form textarea:focus {
@@ -289,6 +292,7 @@ form textarea:focus {
 
 form button {
   height: 30px;
+  cursor: pointer;
 }
 
 /* author section */
@@ -331,6 +335,7 @@ footer {
 footer .last-button {
   transform: translateY(-0.5rem);
   background-color: aliceblue;
+  cursor: pointer;
 }
 
 footer .last-button:hover {

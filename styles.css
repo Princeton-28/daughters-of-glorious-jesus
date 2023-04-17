@@ -116,6 +116,8 @@ nav ul li a:hover {
 .menu li a {
   text-decoration: none;
   color: white;
+  font-size: 1.2rem;
+  font-weight: bolder;
 }
 
 .menu > li {
@@ -133,6 +135,7 @@ nav ul li a:hover {
 }
 
 .exit {
+  font-size: 1.3rem;
   font-weight: bolder;
   color: white;
   float: right;
@@ -293,6 +296,8 @@ form textarea:focus {
 
 form button {
   height: 30px;
+  min-width: 6rem;
+  margin: 0.5rem auto;
   cursor: pointer;
 }
 

@@ -297,7 +297,7 @@ form textarea:focus {
 
 form button {
   height: 30px;
-  min-width: 6rem;
+  min-width: 8rem;
   margin: 0.5rem auto;
   cursor: pointer;
 }

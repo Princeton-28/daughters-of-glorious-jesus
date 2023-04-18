@@ -31,6 +31,8 @@ header {
 }
 
 h1 {
+  font-size: 1.2rem;
+  margin: 20px;
   text-align: center;
   color: blue;
   letter-spacing: 5px;
@@ -44,14 +46,13 @@ nav {
 .menu-button {
   position: absolute;
   left: 5px;
-  top: -80px;
-  font-size: 25px;
+  top: -63px;
   cursor: pointer;
 }
 
 .label {
   width: 30px;
-  height: 3px;
+  height: 2px;
   background-color: blue;
   margin: 6px 0;
 }
@@ -363,8 +364,8 @@ footer .last-button a:hover {
     scroll-margin-top: 100px;
   }
 
-  h1 {
-    margin: 20px;
+  .menu-button {
+    top: -63px;
   }
 
   main {
@@ -403,6 +404,11 @@ footer .last-button a:hover {
     flex-wrap: wrap;
     padding: 30px;
     margin-bottom: -15px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin: 5px;
   }
 
   main {
@@ -556,7 +562,7 @@ footer .last-button a:hover {
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   iframe {

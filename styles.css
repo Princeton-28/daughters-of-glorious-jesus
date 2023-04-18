@@ -128,7 +128,7 @@ nav ul li a:hover {
 
 .menu > li:hover {
   background: black;
-  transition: all 5s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .menu > li:hover a {

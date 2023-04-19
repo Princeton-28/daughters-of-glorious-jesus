@@ -23,16 +23,17 @@ body {
 header {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  /* left: 0; */
+  /* right: 0; */
+  width: 100vw;
   background-color: rgb(192, 243, 243);
   border: 1px solid blueviolet;
   border-radius: 20px;
 }
 
 h1 {
-  font-size: 1.2rem;
-  margin: 20px;
+  font-size: 0.7rem;
+  margin: 20px 20px 20px 30px;
   text-align: center;
   color: blue;
   letter-spacing: 5px;
@@ -46,15 +47,15 @@ nav {
 .menu-button {
   position: absolute;
   left: 5px;
-  top: -63px;
+  top: -35px;
   cursor: pointer;
 }
 
 .label {
-  width: 30px;
+  width: 20px;
   height: 2px;
   background-color: blue;
-  margin: 6px 0;
+  margin: 2px 0;
 }
 
 nav ul {
@@ -96,21 +97,21 @@ nav ul li a:hover {
 /* aside-bar section */
 .left-bar {
   position: fixed;
+  top: 0;
+  left: -100%;
   width: 100%;
   height: 100%;
   background-color: blue;
   opacity: 80%;
   transition: left 2s ease-in-out;
   z-index: 1;
-  left: -100%;
-  top: 0;
 }
 
 .menu {
   list-style: none;
   color: white;
-  margin-top: 150px;
-  padding-left: 0;
+  margin-top: 140px;
+  padding-right: 4rem;
   cursor: pointer;
 }
 
@@ -123,7 +124,7 @@ nav ul li a:hover {
 
 .menu > li {
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
   margin-top: 1rem;
 }
 
@@ -141,7 +142,8 @@ nav ul li a:hover {
   font-weight: bolder;
   color: white;
   float: right;
-  padding: 1.4rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
   cursor: pointer;
 }
 
@@ -155,10 +157,11 @@ nav ul li a:hover {
 
 /* main section */
 main {
-  margin: 300px 35px auto 20px;
+  margin: 80px 35px auto 20px;
 }
 
-iframe {
+iframe,
+img {
   border-radius: 20px;
 }
 
@@ -182,10 +185,6 @@ p {
   padding: 0.5rem;
   border-radius: 5px;
   border: 1px solid blueviolet;
-}
-
-img {
-  border-radius: 20px;
 }
 
 img:hover {
@@ -248,6 +247,7 @@ button a {
 .wiki {
   margin-top: 50px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .wiki-1:hover {
@@ -305,9 +305,9 @@ form button {
 
 /* author section */
 .author {
-  height: 450px;
   display: flex;
   flex-direction: column;
+  height: 450px;
   align-items: center;
 }
 
@@ -359,26 +359,19 @@ footer .last-button a:hover {
 }
 
 /* media queries breakpoint section for mobiles*/
-@media only screen and (min-width: 500px) and (max-width: 768px) {
-  * {
-    scroll-margin-top: 100px;
-  }
-
-  .menu-button {
-    top: -63px;
-  }
-
-  main {
-    margin-top: 100px;
-  }
-
-  .card {
+@media only screen and (max-width: 768px) {
+  /* .card {
     display: block;
-  }
+  } */
 
-  img,
   iframe {
     max-width: 100%;
+    max-height: 350px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 15rem;
   }
 
   .author-1 {

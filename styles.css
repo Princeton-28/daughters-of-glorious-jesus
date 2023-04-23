@@ -23,8 +23,6 @@ body {
 header {
   position: fixed;
   top: 0;
-  /* left: 0; */
-  /* right: 0; */
   width: 100vw;
   background-color: rgb(192, 243, 243);
   border: 1px solid blueviolet;
@@ -158,6 +156,7 @@ nav ul li a:hover {
 /* main section */
 main {
   margin: 80px 35px auto 20px;
+  box-sizing: border-box;
 }
 
 iframe,
@@ -204,6 +203,7 @@ img:hover {
 
 .albums li {
   margin-top: 15px;
+  margin-bottom: 15px;
   margin-left: 30px;
   list-style-type: square;
   letter-spacing: 3px;
@@ -211,10 +211,11 @@ img:hover {
 
 .section-5-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  box-sizing: border-box;
   max-width: 100%;
   max-height: 100%;
-  gap: 30px;
   background-color: rgb(40, 243, 13);
   padding: 1rem;
 }
@@ -307,8 +308,9 @@ form button {
 .author {
   display: flex;
   flex-direction: column;
-  height: 450px;
+  justify-content: center;
   align-items: center;
+  height: 450px;
 }
 
 .author-1 {
@@ -359,7 +361,7 @@ footer .last-button a:hover {
 }
 
 /* media queries breakpoint section for mobiles*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /* .card {
     display: block;
   } */
@@ -382,9 +384,20 @@ footer .last-button a:hover {
 }
 
 /* media queries breakpoint section for tablets*/
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   * {
     scroll-margin-top: 200px;
+  }
+
+  header {
+    left: 0;
+    right: 0;
+    width: 100vw;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin: 5px;
   }
 
   .menu-button {
@@ -399,13 +412,13 @@ footer .last-button a:hover {
     margin-bottom: -15px;
   }
 
-  h1 {
-    font-size: 30px;
-    margin: 5px;
-  }
-
   main {
     margin-top: 195px;
+  }
+
+  iframe {
+    max-width: 95%;
+    max-height: 500px;
   }
 
   .iframe-1 {
@@ -415,16 +428,18 @@ footer .last-button a:hover {
     align-items: center;
   }
 
-  .main-container {
-    max-height: 100%;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+  img {
+    max-width: 95%;
+    max-height: 25rem;
   }
 
-  .section {
-    text-align: center;
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: 20px;
   }
 
   .images-1-container,
@@ -435,32 +450,25 @@ footer .last-button a:hover {
     width: 100%;
   }
 
-  .logo-1 {
-    min-width: 438px;
-    min-height: 300px;
-  }
-
-  .logo-2 {
-    min-width: 438px;
-    min-height: 300px;
-  }
-
-  .logo-3 {
-    min-width: 438px;
-    min-height: 300px;
-  }
-
+  .logo-1,
+  .logo-2,
+  .logo-3,
   .logo-4 {
     min-width: 438px;
     min-height: 300px;
   }
 
   .albums {
-    height: 37%;
+    min-height: 41.5%;
+  }
+
+  .section-5-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 
   .wiki {
     margin-top: 60px;
+    text-align: justify;
   }
 
   form textarea {
@@ -485,16 +493,12 @@ footer .last-button a:hover {
   }
 
   iframe {
-    min-width: 80%;
-    min-height: 600px;
+    max-width: 100%;
+    max-height: 600px;
   }
 
   .main-container {
-    max-height: 100%;
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
 
   .discover {
@@ -509,12 +513,15 @@ footer .last-button a:hover {
     width: 100%;
   }
 
-  .logo-1 {
+  .logo-1,
+  .logo-2,
+  .logo-3,
+  .logo-4 {
     min-width: 100%;
     min-height: 60%;
   }
 
-  .logo-2 {
+  /* .logo-2 {
     min-width: 100%;
     min-height: 60%;
   }
@@ -527,10 +534,11 @@ footer .last-button a:hover {
   .logo-4 {
     min-width: 100%;
     min-height: 60%;
-  }
+  } */
 
   .albums {
-    height: 46.3%;
+    /* height: 46.3%; */
+    height: 52%;
   }
 
   .wiki {
@@ -563,7 +571,15 @@ footer .last-button a:hover {
     min-height: 800px;
   }
 
+  .main-container {
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  }
+
   .albums {
     height: 50.2%;
+  }
+
+  .section-5-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

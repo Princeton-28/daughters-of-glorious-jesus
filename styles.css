@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  scroll-margin-top: 260px;
+  scroll-margin-top: 60px;
 }
 
 html {
@@ -220,7 +220,7 @@ img:hover {
   padding: 1rem;
 }
 
-.five {
+.section-five {
   margin-top: 100px;
 }
 
@@ -457,7 +457,7 @@ footer .last-button a:hover {
   }
 
   .section-5-container {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .wiki {
@@ -495,12 +495,21 @@ footer .last-button a:hover {
     height: 60%;
   }
 
-  .images-1-container,
+  /* original */
+  /* .images-1-container,
   .images-2-container,
   .images-3-container,
   .images-4-container {
     height: 80%;
     width: 100%;
+  }  */
+
+  .images-1-container,
+  .images-2-container,
+  .images-3-container,
+  .images-4-container {
+    height: 80%;
+    width: 80%;
   }
 
   .logo-1,
@@ -549,7 +558,7 @@ footer .last-button a:hover {
 /* media queries breakpoint section for large laptops/desktops*/
 @media only screen and (min-width: 1200px) {
   * {
-    scroll-margin-top: 170px;
+    scroll-margin-top: 130px;
   }
 
   h1 {
